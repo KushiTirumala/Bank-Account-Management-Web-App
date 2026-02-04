@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Account Management</h1>
+
+        <div id="accountFormContainer">
+            <h2>Create Account</h2>
+            <input type="text" id="accountNumber" placeholder="Account Number" required>
+            <input type="text" id="holderName" placeholder="Account Holder Name" required>
+            <button id="createAccount">Create Account</button>
+        </div>
+
+        <div id="accountActions" class="hidden">
+            <h2>Account: <span id="accountInfo"></span></h2>
+            <p>Balance: $<span id="balance">0</span></p>
+
+            <div class="actions">
+                <input type="number" id="amount" placeholder="Enter amount" min="0">
+                <button id="deposit">Deposit</button>
+                <button id="withdraw">Withdraw</button>
+            </div>
+        </div>
+
+        <div id="messages"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
